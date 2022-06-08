@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{pariente.nombre}} {{pariente.apellido}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Edad: {{pariente.edad}}</li>
+      <li class="list-group-item">Fecha de Nacimiento: {{pariente.fecha}}</li>
+    </ul>
+    <div class="card-body">
+      <a href="{% url 'inicio' %}" class="card-link">Volver</a>
+    </div>
+  </div>
+{% endblock content%}
